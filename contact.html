@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Table Reservation | Sardarji's Den</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body class="bg-[#090909] text-neutral-200 antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Header -->
+  <header class="border-b border-[#252525] bg-[#090909]/95 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="font-serif-gold text-2xl font-bold tracking-wider text-gold-gradient">
+        Sardarji's Den
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="index.html" class="nav-link pb-1 text-neutral-300 hover:text-[#d4af37] transition-colors">Home</a>
+        <a href="coming-soon.html" class="nav-link pb-1 text-neutral-300 hover:text-[#d4af37] transition-colors">Menu</a>
+        <a href="index.html#about" class="nav-link pb-1 text-neutral-300 hover:text-[#d4af37] transition-colors">About Us</a>
+        <a href="contact.html" class="nav-link pb-1 text-[#d4af37] border-b border-[#d4af37]">Contact Us</a>
+      </nav>
+      <a href="#reserve" class="px-5 py-2 text-xs uppercase tracking-widest font-serif-gold border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-black transition">
+        Book Table
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Title Banner -->
+  <section class="py-12 bg-[#0d0d0d] border-b border-[#1b1b1b] text-center">
+    <div class="ornament-divider mb-2">
+      <i data-lucide="phone-call" class="w-4 h-4 text-[#d4af37]"></i>
+    </div>
+    <h1 class="font-serif-gold text-3xl sm:text-4xl text-gold-gradient font-bold">Contact & Reservations</h1>
+    <p class="text-xs text-neutral-400 mt-2">Get in touch with us for queries, private events, or table reservations.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="reserve" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      
+      <!-- Contact Details & Hours -->
+      <div class="space-y-8">
+        <div>
+          <h2 class="font-serif-gold text-2xl text-white font-semibold mb-3">Reach Our Team</h2>
+          <p class="text-xs text-neutral-400 leading-relaxed">
+            We welcome you to Sardarji's Den for an unforgettable royal experience. Reach us via phone, email, or simply fill out the reservation form.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="flex items-start gap-4 p-4 bg-[#111111] border-gold-subtle rounded-sm">
+            <i data-lucide="map-pin" class="w-5 h-5 text-[#d4af37] shrink-0 mt-0.5"></i>
+            <div>
+              <h4 class="font-serif-gold text-sm text-white font-semibold">Location</h4>
+              <p class="text-xs text-neutral-400 mt-0.5">Lane 7, Koregaon Park, Pune, Maharashtra 411001</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-4 bg-[#111111] border-gold-subtle rounded-sm">
+            <i data-lucide="clock" class="w-5 h-5 text-[#d4af37] shrink-0 mt-0.5"></i>
+            <div>
+              <h4 class="font-serif-gold text-sm text-white font-semibold">Opening Hours</h4>
+              <p class="text-xs text-neutral-400 mt-0.5">Monday – Sunday: 11:00 AM – 11:30 PM</p>
+              <p class="text-xs text-neutral-500">Buffet available on weekends: 12:30 PM - 04:00 PM</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-4 bg-[#111111] border-gold-subtle rounded-sm">
+            <i data-lucide="phone" class="w-5 h-5 text-[#d4af37] shrink-0 mt-0.5"></i>
+            <div>
+              <h4 class="font-serif-gold text-sm text-white font-semibold">Phone & Inquiries</h4>
+              <p class="text-xs text-neutral-400 mt-0.5">+91 9765141203 / +91 9876543210</p>
+              <p class="text-xs text-neutral-400">info@sardarjisden.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact / Reservation Form -->
+      <div class="bg-[#111111] border border-[#d4af37]/40 p-8 rounded-sm">
+        <h3 class="font-serif-gold text-xl text-gold-gradient font-bold mb-6">Book a Table / Send Message</h3>
+        <form id="contactForm" class="space-y-4">
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-neutral-400 font-serif-gold mb-1">Full Name</label>
+            <input type="text" required placeholder="e.g. John Doe" class="w-full bg-[#181818] border border-neutral-700 p-2.5 text-xs text-white rounded focus:border-[#d4af37] focus:outline-none" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-neutral-400 font-serif-gold mb-1">Phone Number</label>
+              <input type="tel" required placeholder="+91 9876543210" class="w-full bg-[#181818] border border-neutral-700 p-2.5 text-xs text-white rounded focus:border-[#d4af37] focus:outline-none" />
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-neutral-400 font-serif-gold mb-1">Email Address</label>
+              <input type="email" required placeholder="name@domain.com" class="w-full bg-[#181818] border border-neutral-700 p-2.5 text-xs text-white rounded focus:border-[#d4af37] focus:outline-none" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-neutral-400 font-serif-gold mb-1">Guests</label>
+              <select class="w-full bg-[#181818] border border-neutral-700 p-2.5 text-xs text-white rounded focus:border-[#d4af37] focus:outline-none">
+                <option>2 Persons</option>
+                <option>4 Persons</option>
+                <option>6 Persons</option>
+                <option>8+ Persons (Banquet)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-neutral-400 font-serif-gold mb-1">Date</label>
+              <input type="date" class="w-full bg-[#181818] border border-neutral-700 p-2.5 text-xs text-white rounded focus:border-[#d4af37] focus:outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-neutral-400 font-serif-gold mb-1">Special Request / Message</label>
+            <textarea rows="3" placeholder="Tell us if it's an anniversary, birthday or special dietary requirement..." class="w-full bg-[#181818] border border-neutral-700 p-2.5 text-xs text-white rounded focus:border-[#d4af37] focus:outline-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3 bg-[#d4af37] text-black font-serif-gold font-bold text-xs uppercase tracking-widest hover:bg-[#e4be49] transition duration-200">
+            Confirm Booking Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#050505] border-t border-[#1f1f1f] text-neutral-400 text-xs py-8 text-center">
+    &copy; 2026 Sardarji's Den. All rights reserved.
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

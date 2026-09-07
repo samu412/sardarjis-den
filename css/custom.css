@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+
+:root {
+  --gold-primary: #d4af37;
+  --gold-light: #f5d77f;
+  --gold-dark: #997a15;
+  --bg-dark: #0a0a0a;
+  --card-bg: #111111;
+  --border-gold: rgba(212, 175, 55, 0.35);
+}
+
+body {
+  background-color: #080808;
+  color: #e5e5e5;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-serif-gold {
+  font-family: 'Cinzel', serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Gold Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fae08c 0%, #d4af37 50%, #aa8010 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gold Borders */
+.border-gold-subtle {
+  border: 1px solid var(--border-gold);
+}
+
+.border-gold-solid {
+  border: 1px solid #d4af37;
+}
+
+/* Gold Glow on Hover */
+.gold-card-hover {
+  transition: all 0.35s ease;
+}
+.gold-card-hover:hover {
+  transform: translateY(-5px);
+  border-color: rgba(212, 175, 55, 0.8);
+  box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.15);
+}
+
+
+
+/* Reduce navbar height and eliminate gap to hero */
+header > div {
+  height: 4rem !important; 
+}
+
+/* Remove hero top spacing completely so it touches navbar neatly */
+section:first-of-type {
+  padding-top: 0.5rem !important;
+  margin-top: 0 !important;
+}
+
+/* Top accent line margin reset */
+body > div:first-child {
+  margin: 0 !important;
+}
+
+
+section {
+  padding-top: 1.75rem !important;
+  padding-bottom: 1.75rem !important;
+}
+section .text-center {
+  margin-bottom: 1.25rem !important;
+}
+.ornament-divider,
+img[src*="section_pin"] {
+  margin-bottom: 0.25rem !important;
+}
+/* Ornamental Dividers */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.ornament-divider::before,
+.ornament-divider::after {
+  content: "";
+  height: 1px;
+  width: 50px;
+  background: linear-gradient(to right, transparent, #d4af37);
+}
+.ornament-divider::after {
+  background: linear-gradient(to left, transparent, #d4af37);
+}
+
+/* Coming Soon Glow Animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(212, 175, 55, 0.4);
+  }
+}
+.pulse-gold {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
