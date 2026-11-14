@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sardarji's Den | Authentic Punjabi & Global Favourites</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link rel="stylesheet" href="css/custom.css" />
+ <link rel="stylesheet" href="css/tailwind.css" />
+ <link rel="stylesheet" href="css/custom.css" />
 </head>
 <body class="bg-[#050505] text-neutral-200 antialiased selection:bg-[#d4af37] selection:text-black">
 
@@ -23,7 +22,6 @@
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-9 text-xs uppercase tracking-widest font-serif-gold">
         <a href="index.html" class="nav-link pb-1 text-[#d4af37] border-b-2 border-[#d4af37]">Home</a>
-        <a href="Menu.html" class="nav-link pb-1 text-neutral-400 hover:text-[#d4af37] transition-colors">Menu</a>
         <a href="#about" class="nav-link pb-1 text-neutral-400 hover:text-[#d4af37] transition-colors">Our Story</a>
         <a href="contact.html" class="nav-link pb-1 text-neutral-400 hover:text-[#d4af37] transition-colors">Contact Us</a>
       </nav>
@@ -44,7 +42,6 @@
     <!-- Mobile Drawer -->
     <div id="mobileNavMenu" class="hidden md:hidden bg-[#0c0c0c] border-b border-[#222] px-6 py-4 space-y-3">
       <a href="index.html" class="block text-xs font-serif-gold uppercase tracking-wider text-[#d4af37]">Home</a>
-      <a href="coming-soon.html" class="block text-xs font-serif-gold uppercase tracking-wider text-neutral-300">Coming Soon</a>
       <a href="#about" class="block text-xs font-serif-gold uppercase tracking-wider text-neutral-300">Our Story</a>
       <a href="contact.html" class="block text-xs font-serif-gold uppercase tracking-wider text-neutral-300">Contact Us</a>
       <a href="contact.html#reserve" class="inline-block mt-2 px-4 py-2 text-xs uppercase tracking-widest font-serif-gold border border-[#d4af37] text-[#d4af37]">Book Table</a>
@@ -247,10 +244,16 @@
     </div>
 
     <div class="text-center mt-8">
-      <a href="coming-soon.html" class="inline-flex items-center gap-2 px-6 py-2.5 border border-[#d4af37] text-xs font-serif-gold text-[#d4af37] hover:bg-[#d4af37] hover:text-black transition uppercase tracking-wider rounded-[2px]">
-        View Full Gallery <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
-      </a>
-    </div>
+  <button
+    type="button"
+    disabled
+    aria-disabled="true"
+    class="inline-flex items-center gap-2 px-6 py-2.5 border border-[#d4af37] text-xs font-serif-gold text-[#d4af37]
+     uppercase tracking-wider rounded-[2px] cursor-not-allowed opacity-80">
+    View Full Gallery
+    <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+  </button>
+  </div>
   </section>
 
   <!-- Testimonials Section -->
@@ -428,7 +431,6 @@
         <h5 class="font-serif-gold text-white font-semibold mb-3 uppercase tracking-wider text-[11px]">Quick Links</h5>
         <ul class="space-y-2 text-[11px]">
           <li><a href="index.html" class="hover:text-[#d4af37] transition">Home</a></li>
-          <li><a href="coming-soon.html" class="hover:text-[#d4af37] transition">Menu</a></li>
           <li><a href="#about" class="hover:text-[#d4af37] transition">Our Story</a></li>
           <li><a href="contact.html" class="hover:text-[#d4af37] transition">Contact</a></li>
         </ul>
@@ -477,8 +479,6 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script>
-    lucide.createIcons();
-  </script>
+  <script src="js/lucide.min.js"></script>
 </body>
 </html>

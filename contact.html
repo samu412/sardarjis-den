@@ -4,12 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact & Table Reservation | Sardarji's Den</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="css/tailwind.css" />
   <link rel="stylesheet" href="css/custom.css" />
+  
 </head>
 <body class="bg-[#050505] text-neutral-200 antialiased min-h-screen flex flex-col justify-between selection:bg-[#d4af37] selection:text-black">
 
@@ -26,7 +24,7 @@
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-9 text-xs uppercase tracking-widest font-serif-gold">
         <a href="index.html" class="nav-link pb-1 text-neutral-400 hover:text-[#d4af37] transition-colors">Home</a>
-        <a href="coming-soon.html" class="nav-link pb-1 text-neutral-400 hover:text-[#d4af37] transition-colors">Coming Soon</a>
+        
         <a href="index.html#about" class="nav-link pb-1 text-neutral-400 hover:text-[#d4af37] transition-colors">Our Story</a>
         <a href="contact.html" class="nav-link pb-1 text-[#d4af37] border-b-2 border-[#d4af37]">Contact Us</a>
       </nav>
@@ -249,7 +247,6 @@
         <h5 class="font-serif-gold text-white font-semibold mb-3 uppercase tracking-wider text-[11px]">Quick Links</h5>
         <ul class="space-y-2 text-[11px]">
           <li><a href="index.html" class="hover:text-[#d4af37] transition">Home</a></li>
-          <li><a href="coming-soon.html" class="hover:text-[#d4af37] transition">Menu</a></li>
           <li><a href="index.html#about" class="hover:text-[#d4af37] transition">Our Story</a></li>
           <li><a href="contact.html" class="hover:text-[#d4af37] transition text-[#d4af37]">Contact</a></li>
         </ul>
@@ -299,9 +296,7 @@
     </div>
   </footer>
 
+  <script src="js/lucide.min.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    lucide.createIcons();
-  </script>
 </body>
 </html>

@@ -1,12 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Initialize Lucide Icons
-    if (window.lucide) {
-        lucide.createIcons();
-    }
-
-    // 2. Mobile Navigation Toggle
+    
+    // Mobile Navigation Toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileNavMenu = document.getElementById('mobileNavMenu');
 
@@ -16,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Active Navigation Highlighting
+    //  Active Navigation Highlighting
     const currentPath = window.location.pathname.split('/').pop();
     const navLinks = document.querySelectorAll('.nav-link');
 
@@ -37,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 4. Newsletter Submission
+    //  Newsletter Submission
     const newsletterForm = document.getElementById('newsletterForm');
 
     if (newsletterForm) {
@@ -56,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. Contact Form Submission
+    //  Contact Form Submission
     const contactForm = document.getElementById('contactForm');
 
     if (contactForm) {
