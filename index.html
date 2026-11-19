@@ -256,16 +256,19 @@
   </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="py-16 bg-[#080808] border-t border-[#181818]">
+<!-- Testimonials Section -->
+  <section class="py-16 bg-[#080808] border-t border-[#181818] overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-10 flex flex-col items-center">
-        <div class="flex items-center justify-center gap-4 sm:gap-6">
-          <img src="images/section_pin.png" alt="Decorative Pin" class="h-8 sm:h-10 w-auto object-contain rotate-180" />
-          <h2 class="font-serif-gold text-3xl sm:text-4xl text-gold-gradient font-bold whitespace-nowrap">What Our Guests Have to Say</h2>
-          <img src="images/section_pin.png" alt="Decorative Pin" class="h-8 sm:h-10 w-auto object-contain" />
+        <!-- Header container: mobile pe vertical stack ya hidden pins, desktop pe inline pins -->
+        <div class="flex items-center justify-center gap-2 sm:gap-6 w-full max-w-3xl px-2">
+          <img src="images/section_pin.png" alt="Decorative Pin" class="hidden sm:block sm:h-10 w-auto object-contain rotate-180 flex-shrink-0" />
+          <h2 class="font-serif-gold text-2xl sm:text-3xl md:text-4xl text-gold-gradient font-bold text-center leading-tight">
+            What Our Guests Have to Say
+          </h2>
+          <img src="images/section_pin.png" alt="Decorative Pin" class="hidden sm:block sm:h-10 w-auto object-contain flex-shrink-0" />
         </div>
-        <p class="text-xs sm:text-sm text-neutral-400 mt-2 italic">
+        <p class="text-xs sm:text-sm text-neutral-400 mt-2 italic px-4">
           Every visit has a story. Discover what our guests have to say.
         </p>
       </div>
